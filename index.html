@@ -1,37 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daniel Rosen | Roblox Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <!-- hero/header -->
-  <header class="hero">
-    <div class="container">
-      <h1>Daniel Rosen</h1>
-      <h2>Roblox Gameplay Programmer & Systems Scripter</h2>
-      <p>Specializing in modular systems, custom physics, responsive AI, and weapon mechanics.</p>
-      <a href="#projects" class="btn">View My Work</a>
-    </div>
-  </header>
-
-  <!-- projects list -->
-  <section id="projects" class="container">
-    <h3 class="section-title">Featured Systems</h3>
-    
-    <!-- placement -->
+<!-- placement -->
     <div class="project-card">
       <div class="video-container">
         <video loop muted playsinline controls><source src="placement.mp4" type="video/mp4"></video>
       </div>
       <div class="project-info">
-        <h4>Modular Grid Placement System</h4>
+        <h4>Grid Building & Placement System</h4>
         <p><strong>Role:</strong> Lead Scripter</p>
-        <p>Engineered a grid-snapping placement engine featuring live object collision validation, state switching (build, inspect, demolish), and real-time texture modification.</p>
-        <p class="tech-focus"><strong>Tech Focus:</strong> Raycasting, CFrame grid math, and client-server validation.</p>
+        <p>I built a grid-snapping placement system so players can build bases. It checks for collisions so you can't place items inside walls, and includes modes to inspect or demolish objects.</p>
+        <p class="tech-focus"><strong>Tech Focus:</strong> Raycasting, CFrame math, and client-server validation.</p>
       </div>
     </div>
 
@@ -41,10 +17,10 @@
         <video loop muted playsinline controls><source src="pathfinding.mp4" type="video/mp4"></video>
       </div>
       <div class="project-info">
-        <h4>Dynamic AI Pathfinding System</h4>
-        <p><strong>Role:</strong> AI / Gameplay Programmer</p>
-        <p>Programmed an intelligent navigation system capable of dynamically routing around tight corners and obstacles, complete with visual waypoint debugging markers.</p>
-        <p class="tech-focus"><strong>Tech Focus:</strong> PathfindingService, waypoint computation, and NPC state logic.</p>
+        <h4>Custom AI Pathfinding</h4>
+        <p><strong>Role:</strong> AI Programmer</p>
+        <p>A custom NPC navigation system. The AI calculates paths around tight corners and obstacles without getting stuck, using debug markers to show exactly where it's trying to go.</p>
+        <p class="tech-focus"><strong>Tech Focus:</strong> PathfindingService and NPC state logic.</p>
       </div>
     </div>
 
@@ -54,10 +30,10 @@
         <video loop muted playsinline controls><source src="inventory.mp4" type="video/mp4"></video>
       </div>
       <div class="project-info">
-        <h4>Data-Driven Inventory & Tooltip System</h4>
+        <h4>Hotbar & Grid Inventory</h4>
         <p><strong>Role:</strong> Systems Developer</p>
-        <p>Created a modular hotbar and grid backpack inventory with dynamic stack counters, real-time item pickup interaction, and hovering context tooltips.</p>
-        <p class="tech-focus"><strong>Tech Focus:</strong> UI data binding, client-server sync, and modular item databases.</p>
+        <p>A fast hotbar and backpack inventory setup. It handles item stacking, live pickups from the ground, and shows custom tooltips when you hover over items.</p>
+        <p class="tech-focus"><strong>Tech Focus:</strong> UI data binding and modular item databases.</p>
       </div>
     </div>
 
@@ -67,69 +43,9 @@
         <video loop muted playsinline controls><source src="gun-fps.mp4" type="video/mp4"></video>
       </div>
       <div class="project-info">
-        <h4>FPS Gun Engine & Viewmodel Framework</h4>
-        <p><strong>Role:</strong> Core Combat Scripter</p>
-        <p>Developed a responsive first-person shooter framework with weapon rigging (M4A1), procedural viewmodel handling, round-state tracking, and custom HUD integration.</p>
-        <p class="tech-focus"><strong>Tech Focus:</strong> Camera manipulation, procedural spring recoil, and client viewmodel rendering.</p>
+        <h4>First-Person Shooter Framework</h4>
+        <p><strong>Role:</strong> Combat Scripter</p>
+        <p>A clean FPS gun system featuring rigged viewmodels, realistic procedural recoil, ammo tracking, and a custom player HUD.</p>
+        <p class="tech-focus"><strong>Tech Focus:</strong> Camera manipulation, spring recoil, and viewmodel rendering.</p>
       </div>
     </div>
-
-    <!-- TODO: record the flight sim and momentum vids and replace these placeholders -->
-    
-    <div class="project-card">
-      <div class="video-container">
-        <div class="coming-soon">VIDEO COMING SOON</div>
-      </div>
-      <div class="project-info">
-        <h4>Custom Flight Physics Engine</h4>
-        <p><strong>Role:</strong> Physics Programmer</p>
-        <p>Designed and scripted an unanchored airframe complete with aerodynamic lift, stall physics, control surfaces, and a fully functional flight HUD.</p>
-        <p class="tech-focus"><strong>Tech Focus:</strong> Advanced CFrame math and client-side physics optimization.</p>
-      </div>
-    </div>
-
-    <div class="project-card reverse">
-      <div class="video-container">
-        <div class="coming-soon">VIDEO COMING SOON</div>
-      </div>
-      <div class="project-info">
-        <h4>Momentum-Based Interaction System</h4>
-        <p><strong>Role:</strong> Core Systems Scripter</p>
-        <p>Developed a highly modular interaction system with seamless network ownership transfers, character grabbing, and custom ragdoll mechanics.</p>
-        <p class="tech-focus"><strong>Tech Focus:</strong> Secure server-client communication and physics stability under high player momentum.</p>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- team create info -->
-  <section id="experience" class="container text-center" style="padding-top: 0;">
-    <h3 class="section-title">Studio Experience & Collaboration</h3>
-    <p style="max-width: 800px; margin: 0 auto; color: #cbd5e1; font-size: 1.1rem; margin-bottom: 50px;">
-      Beyond writing clean code, I have hands-on experience co-developing projects within shared Roblox groups. I am highly comfortable navigating Team Create environments, configuring role-based editing permissions, and seamlessly integrating modular scripts alongside other developers to keep production running smoothly.
-    </p>
-  </section>
-
-  <!-- skills -->
-  <section id="skills" class="container bg-dark">
-    <h3 class="section-title">Tech Stack & Toolkit</h3>
-    <div class="skills-grid">
-      <div class="skill-box"><strong>Languages:</strong> Luau, HTML/CSS</div>
-      <div class="skill-box"><strong>Frameworks:</strong> Knit, Custom OOP</div>
-      <div class="skill-box"><strong>Workflow:</strong> Rojo, Git, VS Code</div>
-      <div class="skill-box"><strong>Specialties:</strong> Gun Systems, Pathfinding, UI Frameworks, Physics</div>
-    </div>
-  </section>
-
-  <!-- contact info -->
-  <section id="contact" class="container text-center">
-    <h3 class="section-title">Let's Work Together</h3>
-    <p>Currently open for freelance commissions and long-term development roles.</p>
-    <div class="contact-links">
-      <p><strong>Discord:</strong> vanta221</p>
-      <p><strong>Email:</strong> <a href="mailto:daniel12rosen@gmail.com" style="color: #38bdf8; text-decoration: none;">daniel12rosen@gmail.com</a></p>
-    </div>
-  </section>
-
-</body>
-</html>
